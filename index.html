@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>GROCIFY</title>
+</head>
+<body style="background-image: url('./dist/images/image.png');">
+    <nav class="container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <div>
+                <img src="./dist/images/logo.png" alt="Logo" width="150px">
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="text-white hover:text-yellow-400">Home</a>
+                <a href="#" class="text-white hover:text-yellow-400">About</a>
+                <a href="#" class="text-white hover:text-yellow-400">Features</a>
+                <a href="#" class="text-white hover:text-yellow-400">Contact</a>
+            </div>
+            <div>
+                <img src="dist/images/cart.png" alt="" class="hidden md:flex space-x-6 items-center" width="25px">
+            </div>
+
+            <button id="mobile-btn" class="md:hidden">
+                <i class="ri-menu-line text-2xl text-white"></i>
+            </button>
+        </div>
+    
+        <div class="md:hidden">
+            <div id="mobile-menu" class="absolute flex hidden flex-col items-center space-y-4 font-bold bg-gray-50 py-8 left-6 right-6 drop-shadow-lg border border-gray-300">
+                <a href="#" class="hover:text-yellow-400">Home</a>
+                <a href="#" class="hover:text-yellow-400">About</a>
+                <a href="#" class="hover:text-yellow-400">Features</a>
+                <a href="#" class="hover:text-yellow-400">Contact</a>
+                <a href="#" class="py-2 px-6 rounded-full bg-yellow-500 hover:bg-black">Call Me</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row">
+            <div class="md:w-1/2 flex flex-col justify-center space-y-5 py-8 text-center md:text-left text-white">
+                <h1 class="font-bold text-3xl md:text-5xl">Rapidly build modern websites.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum est maxime delectus deserunt accusantium odit.</p>
+                <a href="#" class="py-2 px-6 rounded-full self-center md:self-start text-black bg-yellow-500 hover:bg-white hover:text-yellow-500">Call me</a>
+            </div>
+
+            <div class="md:w-1/2">
+                <img src="./dist/images/grocery-image.png" alt="" width="530px">
+            </div>
+        </div>
+    </section>
+
+    <script src="./dist/js/script.js"></script>
+</body>
+</html>
